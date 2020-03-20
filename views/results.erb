@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title></title>
+        </head>
+        <body>
+           <p>stuff</p>
+            <% @myarray.each do |row| %>
+                <% row.each do |att| + '|' %>
+                   <%= att %>
+                <% end %>
+                <br>
+            <% end %>
+        </body>
+    </html>
