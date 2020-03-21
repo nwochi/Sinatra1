@@ -35,4 +35,14 @@ end
 
 get '/greet' do
   "Hey there, #{params[:name]}!"
+  
+  
+require 'sinatra'
+require 'sinatra/reloader'
+
+post '/candles' do
+    @howmany = params[:howmany]
+    erb :candles
+end
+
 end
